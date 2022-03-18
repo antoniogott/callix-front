@@ -1,0 +1,34 @@
+.header-nav_root {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.header-nav_root .header-nav_card {
+    flex-basis: 0;
+    flex-grow: 1;
+    font-size: 2rem;
+    background-color: #266ac2;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s cubic-bezier(.49, .09, .11, .79);
+}
+
+.header-nav_root .header-nav_card:first-child {
+    border-radius: 1.8rem 0 0 1.8rem;
+}
+
+.header-nav_root .header-nav_card:last-child {
+    border-radius: 0 1.8rem 1.8rem 0;
+}
+
+.header-nav_root .header-nav_card:hover {
+    background-color: #194785;
+}

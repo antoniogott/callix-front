@@ -1,0 +1,36 @@
+.gallery_root {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery_root .gallery_title {
+    font-size: 1em;
+    text-align: left;
+    margin: 0.5rem 0;
+}
+
+.gallery_root .carousel {
+    overflow: auto hidden;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #0000;
+}
+
+.gallery_root .carousel_item {
+    background-color: black;
+    border-radius: 0.7rem;
+}
+
+.gallery_root .carousel_img {
+    height: 100%;
+    border-radius: 0.7rem;
+}
+
+.gallery_root .carousel_img:hover {
+    opacity: 0.5;
+}
+
+.gallery_root .carousel_img {
+    transition: opacity 0.1s cubic-bezier(.49, .09, .11, .79);
+}
