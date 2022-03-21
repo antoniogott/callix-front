@@ -1,0 +1,42 @@
+.launch_root {
+    padding: 2rem 5%;
+    width: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+
+    background-color: #0008;
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+}
+
+.launch_root .launch_title {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+    font-size: 0.8em;
+}
+
+.launch_root .launch_data {
+    text-align: start;
+    font-size: 0.8em;
+}
+
+.launch_root .launch_success {
+    color: red;
+}
+
+.launch_root .launch_success[data-success="true"] {
+    color: lime;
+}
+
+.launch_root .launch_youtube {
+    height: calc(calc(100vw - 20rem) / 1.77);
+}
+
+.launch_root .launch_link {
+    background-color: #fff5;
+    font-weight: bold;
+    border-radius: .3em;
+    padding: .2em;
+}

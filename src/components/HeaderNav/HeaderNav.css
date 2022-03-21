@@ -5,6 +5,7 @@
     gap: 1rem;
     padding: 1rem;
     box-sizing: border-box;
+    background-color: #9bc1f3;
 }
 
 .header-nav_root .header-nav_card {
@@ -29,6 +30,10 @@
     border-radius: 0 1.8rem 1.8rem 0;
 }
 
-.header-nav_root .header-nav_card:hover {
+.header-nav_root .header-nav_card:hover:not(.header-nav_selected) {
+    background-color: #205aa7;
+}
+
+.header-nav_root .header-nav_selected {
     background-color: #194785;
 }

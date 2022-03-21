@@ -1,0 +1,16 @@
+.launch-list_root {
+    padding: 0 2rem;
+}
+
+.launch-list_root .launch-list_item {
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: #3b414c;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.launch-list_root .launch-list_item:hover {
+    background-color: #464f5f;
+}

@@ -1,0 +1,25 @@
+.launch-list_root .launch-list_item_details {
+    margin-left: 2rem;
+    text-align: start;
+}
+
+.launch-list_root .launch-list_item_details>h4 {
+    margin: .5rem 0;
+}
+
+.launch-list_root .launch-list_item_details>p {
+    font-size: 1.3rem;
+    margin-block-end: 0;
+}
+
+.launch-list_root .launch-list_item_details>p+p {
+    margin-block-start: 0;
+}
+
+.launch-list_root .launch-list_item_details .launch-list_success {
+    color: red;
+}
+
+.launch-list_root .launch-list_item_details .launch-list_success[data-success="true"] {
+    color: lime;
+}

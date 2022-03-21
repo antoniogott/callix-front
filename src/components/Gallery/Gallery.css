@@ -13,7 +13,7 @@
     overflow: auto hidden;
     display: flex;
     gap: 2rem;
-    padding: 1rem;
+    padding: 1rem 0;
     background-color: #0000;
 }
 

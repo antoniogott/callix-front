@@ -1,5 +1,6 @@
 import React from "react";
-import LaunchBig from "../LaunchBig/LaunchBig";
+import { useState, useEffect } from "react";
+import Launch from "../Launch/Launch";
 import "./HeaderNav.css";
 
 export default function HeaderNav(props) {
@@ -10,19 +11,23 @@ export default function HeaderNav(props) {
   return (
     <div className="header-nav_root">
 
-      <div className="header-nav_card" onClick={() => handleSelect("past")}>
+      <div onClick={() => handleSelect("past")}
+        className={`header-nav_card ${props.selected === "past" && "header-nav_selected"}`}>
         Past launches
       </div>
 
-      <div className="header-nav_card" onClick={() => handleSelect("latest")}>
+      <div onClick={() => handleSelect("latest")}
+        className={`header-nav_card ${props.selected === "latest" && "header-nav_selected"}`}>
         Latest launch
       </div>
 
-      <div className="header-nav_card" onClick={() => handleSelect("next")}>
+      <div onClick={() => handleSelect("next")}
+        className={`header-nav_card ${props.selected === "next" && "header-nav_selected"}`}>
         Next launch
       </div>
 
-      <div className="header-nav_card" onClick={() => handleSelect("upcoming")}>
+      <div onClick={() => handleSelect("upcoming")}
+        className={`header-nav_card ${props.selected === "upcoming" && "header-nav_selected"}`}>
         Upcoming launches
       </div>
 
