@@ -6,7 +6,7 @@ import Launch from "../Launch/Launch";
 import "./Home.css";
 import LaunchList from "../LaunchList/LaunchList";
 
-const LAUNCHES_API_URL_BASE = "http://localhost:3001/v1/launch";
+const LAUNCHES_API_URL_BASE = process.env.REACT_APP_LAUNCHES_API_URL_BASE || "http://localhost:3001/v1/launch";
 
 export default function Home(props) {
   const [latestLaunch, setLatestLaunch] = useState();
