@@ -40,11 +40,12 @@ export default function Launch(props) {
         {launch.details &&
           <p><b>Details:</b> {launch.details}</p>}
 
-        <iframe title="youtube" className="launch_youtube" width="100%"
-          frameBorder="0" allowFullScreen
-          src={`https://www.youtube.com/embed/${launch.youtube_id}?fs=1`}>
-        </iframe>
       </div>
+
+      <iframe title="youtube" className="launch_youtube" width="100%"
+        frameBorder="0" allowFullScreen
+        src={`https://www.youtube.com/embed/${launch.youtube_id}?fs=1`}>
+      </iframe>
 
     </div>
   );
